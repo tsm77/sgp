@@ -1,0 +1,7 @@
+version: '2.0'
+services:
+  sgp-postgresql:
+    extends:
+      file: postgresql.yml
+      service: sgp-postgresql
+    container_name: sgp-postgresql

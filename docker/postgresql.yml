@@ -1,0 +1,11 @@
+version: '2'
+services:
+  sgp-postgresql:
+    image: postgres:11.5
+    # volumes:
+    #     - ~/volumes/jhipster/srsservice/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=sgp
+      - POSTGRES_PASSWORD=sgp
+    ports:
+      - 5432:5432
